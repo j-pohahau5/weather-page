@@ -99,9 +99,10 @@ searchBtn.on('click', function(event) {
     // cityInput = event.target[0].value.trim();
     // var format = event.target[1].value;
 
-    if (cityInput) {
+    if (cityInput === searchBtn) {
         displayForecast();
         displayTodayWeather();
+        console.log("button clicked")
 
         cityInput.textContent = '';
         // document.getElementById('city-input').textContent = ""
