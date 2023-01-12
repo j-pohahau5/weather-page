@@ -6,6 +6,32 @@ var wind = $(".wind");
 var humidity = $(".humidity");
 var cityTitle = $(".city-title")
 
+var dateA = $(".date-one");
+var tempA = $("#temp-one");
+var windA = $("#wind-one");
+var humidityA = $("#humidity-one");
+
+var dateB = $(".date-two");
+var tempB = $("#temp-two");
+var windB = $("#wind-two");
+var humidityB = $("#humidity-two");
+
+var dateC = $(".date-three");
+var tempC = $("#temp-three");
+var windC = $("#wind-three");
+var humidityC = $("#humidity-three");
+
+var dateD = $(".date-four");
+var tempD = $("#temp-four");
+var windD = $("#wind-four");
+var humidityD = $("#humidity-four");
+
+var dateE = $(".date-five");
+var tempE = $("#temp-five");
+var windE = $("#wind-five");
+var humidityE = $("#humidity-five");
+
+
 var city = "";
 
 console.log(cityInput);
@@ -24,36 +50,9 @@ searchBtn.on("click", function(event) {
     var currentWeather = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=d8540a4fbc73181f1dfa2d03253a4a74';
     var forecast = 'https://api.openweathermap.org/data/2.5/forecast?q=' + city + '&appid=d8540a4fbc73181f1dfa2d03253a4a74';
 
-    fetch(currentWeather)
-        .then(function (response) {
-        return response.json();
-        //   console.log(response)
-        })
-        .then(function (data) {
-          temp = "Temp: " + data.main.temp
-            wind = "Wind: " + data.wind.speed
-            humidity = "Humidity: " + data.main.humidity
-        console.log(data);
-        console.log(temp);
-        console.log(wind);
-        console.log(humidity);  
-        });
+    
 
-    fetch(forecast)
-            .then(function (response) {
-            return response.json();
-            //   console.log(response)
-            })
-            .then(function (data) {
-                temp = "Temp: " + data.list[0].main.temp
-                wind = "Wind: " + data.list[0].wind.speed
-                humidity = "Humidity: " + data.list[0].main.humidity
-            console.log(data);
-            console.log(temp);
-            console.log(wind);
-            console.log(humidity);
-            
-            }); 
+    
 
     console.log(city);
     console.log(currentWeather);
@@ -62,8 +61,24 @@ searchBtn.on("click", function(event) {
 function displayTodayWeather() {
     
     if (searchBtn) {
-        cityTitle.textContent = cityInput.val();
-        console.log(cityTitle);
+        cityTitle.text(cityInput.val())
+        fetch(currentWeather)
+            .then(function (response) {
+            return response.json();
+            //   console.log(response)
+        })
+            .then(function (data) {
+                cityTitle.textContent = cityInput.val();
+                temp.text("Temp: " + data.main.temp) 
+                wind.text("Wind: " + data.wind.speed + " mph")  
+                humidity.text("Humidity: " + data.main.humidity + " %") 
+                console.log(data);
+                console.log(temp);
+                console.log(wind);
+                console.log(humidity); 
+                console.log(cityTitle);
+        });
+        
 
         currentWeather
         console.log(currentWeather)
@@ -77,6 +92,43 @@ console.log(displayTodayWeather);
 function displayForecast() {
     
     if (searchBtn) {
+        fetch(forecast)
+            .then(function (response) {
+                return response.json();
+                        //   console.log(response)
+            })
+            .then(function (data) {
+                dateA.text("Date: " + data.list[0].dt_txt) 
+                tempA.text("Temp: " + data.list[0].main.temp) 
+                windA.text("Wind: " + data.list[0].wind.speed + " mph") 
+                humidityA.text("Humidity: " + data.list[0].main.humidity + " %"); 
+
+                dateB.text("Date: " + data.list[8].dt_txt) 
+                tempB.text("Temp: " + data.list[8].main.temp) 
+                windB.text("Wind: " + data.list[8].wind.speed + " mph") 
+                humidityB.text("Humidity: " + data.list[8].main.humidity + " %"); 
+
+                dateC.text("Date: " + data.list[16].dt_txt) 
+                tempC.text("Temp: " + data.list[16].main.temp) 
+                windC.text("Wind: " + data.list[16].wind.speed + " mph") 
+                humidityC.text("Humidity: " + data.list[16].main.humidity + " %"); 
+
+                dateD.text("Date: " + data.list[24].dt_txt) 
+                tempD.text("Temp: " + data.list[24].main.temp) 
+                windD.text("Wind: " + data.list[24].wind.speed + " mph") 
+                humidityD.text("Humidity: " + data.list[24].main.humidity + " %"); 
+
+                dateE.text("Date: " + data.list[32].dt_txt) 
+                tempE.text("Temp: " + data.list[32].main.temp) 
+                windE.text("Wind: " + data.list[32].wind.speed + " mph") 
+                humidityE.text("Humidity: " + data.list[32].main.humidity + " %"); 
+                console.log(data);
+                // console.log(dataA);
+                // console.log(tempA);
+                // console.log(windA);
+                // console.log(humidityA);                   
+            }); 
+
         forecast
         console.log(forecast)
     } else {

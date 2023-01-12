@@ -8,3 +8,60 @@ main {
     margin-left: 20px;
     margin-top: 10px;
 }
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.weather-log{
+    display: flex;
+    flex-direction: column;
+    margin-left: 500px;
+}
+
+.city-title {
+    margin-bottom: 20px;
+}
+
+.five-day-forecast {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.forecast{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    margin-left: 800px;
+    
+}
+
+.first-date {
+    color: black;
+    margin-left:50px;
+    border-color: black;
+}
+
+.second-date {
+    color: black;
+    margin-left:10px;
+}
+
+.third-date {
+    color: black;
+    margin-left:10px;
+}
+
+.fourth-date {
+    color: black;
+    margin-left:10px;
+}
+
+.fifth-date {
+    color: black;
+    margin-left:10px;
+    
+}
