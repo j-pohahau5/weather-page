@@ -7,26 +7,31 @@ var humidity = $(".humidity");
 var cityTitle = $(".city-title")
 
 var dateA = $(".date-one");
+// var iconA = $(".conditon-one")
 var tempA = $("#temp-one");
 var windA = $("#wind-one");
 var humidityA = $("#humidity-one");
 
 var dateB = $(".date-two");
+// var iconB = $(".conditon-two")
 var tempB = $("#temp-two");
 var windB = $("#wind-two");
 var humidityB = $("#humidity-two");
 
 var dateC = $(".date-three");
+// var iconC = $(".conditon-three")
 var tempC = $("#temp-three");
 var windC = $("#wind-three");
 var humidityC = $("#humidity-three");
 
 var dateD = $(".date-four");
+// var iconD = $(".conditon-four")
 var tempD = $("#temp-four");
 var windD = $("#wind-four");
 var humidityD = $("#humidity-four");
 
 var dateE = $(".date-five");
+// var iconE = $(".conditon-five")
 var tempE = $("#temp-five");
 var windE = $("#wind-five");
 var humidityE = $("#humidity-five");
@@ -99,9 +104,11 @@ function displayForecast() {
             })
             .then(function (data) {
                 dateA.text("Date: " + data.list[0].dt_txt) 
+                // iconA.text("Date: " + data.list[0].weather[0].icon + "png") 
                 tempA.text("Temp: " + data.list[0].main.temp) 
                 windA.text("Wind: " + data.list[0].wind.speed + " mph") 
                 humidityA.text("Humidity: " + data.list[0].main.humidity + " %"); 
+                // console.log(iconA) 
 
                 dateB.text("Date: " + data.list[8].dt_txt) 
                 tempB.text("Temp: " + data.list[8].main.temp) 

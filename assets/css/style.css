@@ -40,28 +40,33 @@ main {
 }
 
 .first-date {
-    color: black;
+    color: white;
+    background-color: darkslateblue;
     margin-left:50px;
     border-color: black;
 }
 
 .second-date {
-    color: black;
-    margin-left:10px;
+    color: white;   
+    background-color: darkslateblue;
+    margin-left:10px; 
 }
 
 .third-date {
-    color: black;
+    color: white;
+    background-color: darkslateblue;
     margin-left:10px;
 }
 
 .fourth-date {
-    color: black;
+    color: white;
+    background-color: darkslateblue;
     margin-left:10px;
 }
 
 .fifth-date {
-    color: black;
+    color: white;
+    background-color: darkslateblue;
     margin-left:10px;
     
 }
