@@ -74,7 +74,7 @@ function displayTodayWeather() {
         })
             .then(function (data) {
                 cityTitle.textContent = cityInput.val();
-                temp.text("Temp: " + data.main.temp + " 'F") 
+                temp.text("Temp: " + data.main.temp + " °F") 
                 wind.text("Wind: " + data.wind.speed + " mph")  
                 humidity.text("Humidity: " + data.main.humidity + " %") 
                 console.log(data);
@@ -105,28 +105,28 @@ function displayForecast() {
             .then(function (data) {
                 dateA.text("Date: " + data.list[0].dt_txt) 
                 // iconA.text("Date: " + data.list[0].weather[0].icon + "png") 
-                tempA.text("Temp: " + data.list[0].main.temp + " 'F") 
+                tempA.text("Temp: " + data.list[0].main.temp + " °F") 
                 windA.text("Wind: " + data.list[0].wind.speed + " mph") 
                 humidityA.text("Humidity: " + data.list[0].main.humidity + " %"); 
                 // console.log(iconA) 
 
                 dateB.text("Date: " + data.list[8].dt_txt) 
-                tempB.text("Temp: " + data.list[8].main.temp + " 'F") 
+                tempB.text("Temp: " + data.list[8].main.temp + " °F") 
                 windB.text("Wind: " + data.list[8].wind.speed + " mph") 
                 humidityB.text("Humidity: " + data.list[8].main.humidity + " %"); 
 
                 dateC.text("Date: " + data.list[16].dt_txt) 
-                tempC.text("Temp: " + data.list[16].main.temp + " 'F") 
+                tempC.text("Temp: " + data.list[16].main.temp + " °F") 
                 windC.text("Wind: " + data.list[16].wind.speed + " mph") 
                 humidityC.text("Humidity: " + data.list[16].main.humidity + " %"); 
 
                 dateD.text("Date: " + data.list[24].dt_txt) 
-                tempD.text("Temp: " + data.list[24].main.temp + " 'F") 
+                tempD.text("Temp: " + data.list[24].main.temp + " °F") 
                 windD.text("Wind: " + data.list[24].wind.speed + " mph") 
                 humidityD.text("Humidity: " + data.list[24].main.humidity + " %"); 
 
                 dateE.text("Date: " + data.list[32].dt_txt) 
-                tempE.text("Temp: " + data.list[32].main.temp + " 'F") 
+                tempE.text("Temp: " + data.list[32].main.temp + " °F") 
                 windE.text("Wind: " + data.list[32].wind.speed + " mph") 
                 humidityE.text("Humidity: " + data.list[32].main.humidity + " %"); 
                 console.log(data);
