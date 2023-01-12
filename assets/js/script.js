@@ -125,8 +125,8 @@ function displayForecast() {
                 windD.text("Wind: " + data.list[24].wind.speed + " mph") 
                 humidityD.text("Humidity: " + data.list[24].main.humidity + " %"); 
 
-                dateE.text("Date: " + data.list[32].dt_txt + " 'F") 
-                tempE.text("Temp: " + data.list[32].main.temp) 
+                dateE.text("Date: " + data.list[32].dt_txt) 
+                tempE.text("Temp: " + data.list[32].main.temp + " 'F") 
                 windE.text("Wind: " + data.list[32].wind.speed + " mph") 
                 humidityE.text("Humidity: " + data.list[32].main.humidity + " %"); 
                 console.log(data);
