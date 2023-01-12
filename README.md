@@ -1,55 +1,67 @@
 # weather-page
 
 ## Description
-Your GitHub profile is an extremely important aspect of your public identity as a developer. A well-crafted one allows you to show off your work to other developers as well as potential employers. An important component of your GitHub profile—and one that many new developers often overlook—is the README.md file.
-The quality of a README often differentiates a good project from a bad project. A good one takes advantage of the opportunity to explain and showcase what your application does, justify the technologies used, and even talk about some of the challenges you faced and features you hope to implement in the future. A good README helps you stand out among the large crowd of developers putting their work on GitHub.
-There's no one right way to structure a good README. There is one very wrong way, however, and that is to not include a README at all or to create a very anemic one. This guide outlines a few best practices. As you progress in your career, you will develop your own ideas about what makes a good README.
-At a minimum, your project README needs a title and a short description explaining the what, why, and how. What was your motivation? Why did you build this project? (Note: The answer is not "Because it was a homework assignment.") What problem does it solve? What did you learn? What makes your project stand out?
-Lastly, if your project is deployed, include a link to the deployed application here.
-If you're new to Markdown, read the GitHub guide on Mastering Markdown.
-If you need an example of a good README, check out the VSCode repository.
 
-## Table of Contents (Optional)
-If your README is very long, add a table of contents to make it easy for users to find what they need.
+My motivation for this project was to do my best with the resouces I had, I was unfortunate with my tutoring session not being available with no reason given. Reason I built this webpage was to create a visible weather for current day and forecast the next five day weather condition. The problem it solves is that those who don't have access to television but do have access to internet can see the weather if wanted. I learned a lot about how to set up the fetch on JavaScript.
 
-Installation
-Usage
-Credits
-License
+https://github.com/j-pohahau5/weather-page
+
 
 
 ## Installation
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
 
-Usage
-Provide instructions and examples for use. Include screenshots as needed.
-To add a screenshot, create an assets/images folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+Steps for Installing:
 
-![alt text](assets/images/screenshot.png)
+1. Click my deplyed link to the web site
+
+2. Click my GitHub repository link a) Open the files for index.html, style.css, and script.js to copy or download files
+
+3. View these repository files in your code application and view the steps I took.
+
+
+
+## Usage
+
+Steps for usage:
+
+1. Type in city you want to see in the weather for.
+
+2. click search button and see the weather.
 
 
 
 ## Credits
-List your collaborators, if any, with links to their GitHub profiles.
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-If you followed tutorials, include links to those here as well.
+
+https://openweathermap.org/api
+
+https://getbootstrap.com/docs/5.3/getting-started/introduction/
+
+https://jquery.com/
+
+https://www.w3schools.com/
+
+https://developer.mozilla.org/en-US/
+
 
 ## License
-The last section of a good README is a license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, use https://choosealicense.com/
+MIT License
 
-🏆 The sections listed above are the minimum for a good README, but your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
+Copyright (c) [year] [fullname]
 
-## Badges
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by shields.io. You may not understand what they all represent now, but you will in time.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-## Features
-If your project has a lot of features, consider adding a heading called "Features" and listing them there.
-
-## Contributing
-If you created an application or package and would like other developers to contribute it, you will want to add guidelines for how to do so. The Contributor Covenant is an industry standard, but you can always write your own.
-
-## Tests
-Go the extra mile and write tests for your application. Then provide examples on how to run them.
-
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
