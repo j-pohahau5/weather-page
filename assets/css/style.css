@@ -70,3 +70,8 @@ main {
     margin-left:10px;
     
 }
+
+#cityBtn{
+    display: contents;
+    background-color: aqua;
+}
